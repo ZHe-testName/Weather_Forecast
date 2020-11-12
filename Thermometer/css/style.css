@@ -24,6 +24,11 @@ body {
   font-family: 'Comfort-Regular';
   font-weight: 300
 }
+
+.main-container{
+  display: flex;
+}
+
 #container {
   width:370px;
   height:370px;

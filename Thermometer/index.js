@@ -1,6 +1,6 @@
 'use strict';
 
-const requesStr = 'http://api.openweathermap.org/data/2.5/weather?q=Vinnytsia&lang=ru&units=metric&appid=e3f7748f23d84130cd165d531a86ce00';
+const requestStr = 'http://api.openweathermap.org/data/2.5/weather?q=Kyiv&lang=ru&units=metric&appid=e3f7748f23d84130cd165d531a86ce00';
     // apiKey = 'e3f7748f23d84130cd165d531a86ce00',
     // city = 'Kiev';
 
@@ -28,11 +28,12 @@ const getWeather = (url, callback, reject = console.error) => {
     request.send();
 }
 
-getWeather(requesStr, (data) => {
+getWeather(requestStr, (data) => {
     rez = JSON.parse(data);
 
     console.log(rez);
 });
+
 
 console.log(128 / 40);
 
