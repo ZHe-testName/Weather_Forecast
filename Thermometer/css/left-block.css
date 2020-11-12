@@ -1,0 +1,16 @@
+.left-block{
+    position: relative;
+    width: 70%;
+}
+
+.image-map{
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0 0 0 3px white;
+}
+
+.city-card{
+    position: absolute;
+    top:20px;
+    left: 20px;
+}

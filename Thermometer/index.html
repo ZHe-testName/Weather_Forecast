@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Thermomrter</title>
+</head>
+<body>
+  <div class="left-block">
+    <div class="map">
+      <img src="./imgs/map-ukraine-simple-blank-hq.jpg" alt="Map of ukraine" class="image-map">
+
+      <div class="city-card">
+        <input type="radio" class="city" id="kiev">
+        <label for="" class="city-label">
+          Киев
+        </label> <!-- /.city-label -->
+      </div>
+      <!-- /.city-card -->
+    </div>
+    <!-- /.map -->
+  </div>
+  <!-- /.left-block -->
+  <div class="right-block">
+    <div class="thermometer">
+      <div id="container">
+        <div id="inner">
+          <div id="notches"></div>
+        </div>
+      </div>
+
+      <div class="scoreboard">
+        <p class="temperature">
+          -23
+        </p>
+      </div>
+    </div>
+    <div id="print"></div>
+  </div>
+  <!-- /.right-block -->
+</body>
+
+<script src="./index.js"></script>
+</html>
