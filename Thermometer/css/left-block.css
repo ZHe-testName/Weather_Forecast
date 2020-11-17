@@ -3,23 +3,13 @@
     width: 972px;
     background: no-repeat center url(../imgs/map-ukraine-simple-blank-hq.jpg);
     background-size: contain;
+    font-family: 'Comfort-Bold';
     display: grid;
     grid-template-rows: repeat(3, 220px);
     grid-template-columns: repeat(3, 324px);
     grid-template-areas: "card-1 card-2 card-3"
                         "card-4 card-5 card-6"
                         "card-7 card-8 card-9";
-}
-
-.card-5{
-    position: relative;
-    grid-area: card-2;
-}
-
-#kiev{
-    position: absolute;
-    top: 180px;
-    left: 135px;
 }
 
 .left-block{
@@ -31,3 +21,102 @@
     top:20px;
     left: 20px;
 }
+
+.city-label{
+    user-select: none;
+}
+
+.city{
+    visibility: hidden;
+}
+
+.city::before{
+    content: '';
+    visibility: visible;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid brown;
+    background-color: transparent;
+}
+
+.city:checked::before{
+    border: 2px solid tomato;
+    box-shadow: 0px 0px 4px 0px red;
+    transform: scale(1.1);
+}
+
+.card-1{
+    position: relative;
+    grid-area: card-1;
+}
+
+.card-2{
+    position: relative;
+    grid-area: card-2;
+}
+
+.card-4{
+    position: relative;
+    grid-area: card-4;
+}
+
+.card-5{
+    position: relative;
+    grid-area: card-5;
+}
+
+.card-6{
+    position: relative;
+    grid-area: card-6;
+}
+
+.card-8{
+    position: relative;
+    grid-area: card-8;
+}
+
+
+#kiev{
+    position: absolute;
+    top: 180px;
+    left: 135px;
+}
+
+#odessa{
+    position: absolute;
+    top: 67px;
+    left: 126px;
+}
+
+#vinnytsia{
+    position: absolute;
+    top: 62px;
+    left: 39px;
+}
+
+#lviv{
+    position: absolute;
+    top: 0px;
+    left: 137px;
+}
+
+#zaporizhia{
+    position: absolute;
+    top: 152px;
+    left: 45px;
+}
+
+#kharkiv{
+    position: absolute;
+    top: -15px;
+    left: 75px;
+}
+
+#rivne{
+    position: absolute;
+    top: 159px;
+    left: 260px;
+}
+
