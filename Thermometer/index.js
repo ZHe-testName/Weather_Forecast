@@ -44,7 +44,9 @@ console.log(128 / 40);
 
 //Map scrolling
 
-const map = document.querySelector('.map');
+const map = document.querySelector('.map'),
+    skin = document.querySelector('.skin'),
+    citiesCards = map.children;
 
 const citiesCoords = [
     {
@@ -92,16 +94,34 @@ const citiesCoords = [
 
 map.addEventListener('click', (event) => {
     const target = event.target;
-    
+
     if (target.classList.contains('city')){
         const city = target.dataset.city;
-        
+
         const equalCityObj = citiesCoords.find(item => item.city === city);
 
         map.classList.add('increase');
         map.style.transform = `scale(2) translateX(${equalCityObj.x}px) translateY(${equalCityObj.y}px)`;
+        target.parentNode.parentNode.style.zIndex = '2';
+
+
+        setTimeout(() => {
+            skin.style.visibility = 'visible';
+        }, 500);
+        
     }
-})
+});
+
+skin.addEventListener('click', () => {
+    map.classList.remove('icrease');
+    map.removeAttribute('style');
+
+    [...citiesCards].forEach(item => {
+        item.removeAttribute('style');
+    })
+
+    skin.style.visibility = 'hidden';
+});
 
 
 

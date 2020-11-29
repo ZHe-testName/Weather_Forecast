@@ -1,3 +1,8 @@
+.main-container{
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
 .map{
     position: relative;
     height: 660px;
@@ -13,13 +18,15 @@
                         "card-7 card-8 card-9";
 }
 
-.map::before{
+.skin{
     position: absolute;
-    left: 77px;
-    top: 70px;
     content: '';
-    width: 820px;
-    height: 520px;
+    width: 972px;
+    height: 660px;
+    background: inherit ;
+    filter: blur(2px);
+    visibility: hidden;
+    z-index: 1;
 }
 
 .increase{
@@ -67,31 +74,37 @@
 .card-1{
     position: relative;
     grid-area: card-1;
+    user-select: none;
 }
 
 .card-2{
     position: relative;
     grid-area: card-2;
+    user-select: none;
 }
 
 .card-4{
     position: relative;
     grid-area: card-4;
+    user-select: none;
 }
 
 .card-5{
     position: relative;
     grid-area: card-5;
+    user-select: none;
 }
 
 .card-6{
     position: relative;
     grid-area: card-6;
+    user-select: none;
 }
 
 .card-8{
     position: relative;
     grid-area: card-8;
+    user-select: none;
 }
 
 
