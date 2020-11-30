@@ -51,44 +51,51 @@ const map = document.querySelector('.map'),
 const citiesCoords = [
     {
         city: 'rivne',
-        x: 225,
+        x: 105,
         y: 160,
+        modalSide: 'right',
     },
 
     {
         city: 'lviv',
         x: 225,
         y: 95,
+        modalSide: 'right',
     },
 
     {
         city: 'kiev',
-        x: 15,
+        x: 105,
         y: 150,
+        modalSide: 'left',
     },
 
     {
         city: 'vinnytsia',
-        x: 140,
+        x: 190,
         y: 40,
+        modalSide: 'left',
     },
 
     {
         city: 'zaporizhia',
-        x: -220,
+        x: -150,
         y: -55,
+        modalSide: 'left',
     },
 
     {
         city: 'kharkiv',
-        x: -225,
+        x: -165,
         y: 130,
+        modalSide: 'left',
     },
 
     {
         city: 'odessa',
-        x: 45,
+        x: 95,
         y: -160,
+        modalSide: 'left',
     }
 ];
 

@@ -16,6 +16,7 @@ body {
   /* background: radial-gradient(circle at 50% 50%, #fff 0%, #7EC0EE 200%) */
     /* linear-gradient(to top,
       #6C7A88,#B3C7DD); */
+  background: linear-gradient(rgb(231, 231, 231), rgb(250, 249, 249));    
   overflow: hidden;
   display: flex;
   justify-content: stretch;
